@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import DarkMode from './Components/Darkmode'
+import TodoList from './Components/Todolist'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TodoList/>
+      {/* <DarkMode/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
+
+// import React from "react";
+// import Userform from "./Contestapi/Userform";
+// import UserContext from "./Contestapi/Usercontext";
+
+// import {
+
+
+//   BrowserRouter as Router,Link,
+//   Routes,Route
+ 
+// } from "react-router-dom";
+
+// function App() {
+//   return (
+//     // <UserContext>
+//     //   <Userform/>
+//     //   </UserContext>
+
+// <Router>
+//        <nav>
+//         <ul>
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+
+//           </li>
+//           <li>
+//             <Link to="/profile">Users</Link>
+//           </li>
+//         </ul>
+//       </nav>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/profile" element={<Userprofile />} />
+//       </Routes> 
+
+//       </Router>
+
+    
+//   );
+// }
+
+// export default App;
